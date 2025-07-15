@@ -113,10 +113,10 @@ TextureImporter:
       name: Prince_Hurt_0
       rect:
         serializedVersion: 2
-        x: 15
-        y: 170
-        width: 40
-        height: 20
+        x: 0
+        y: 47
+        width: 14
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,8 +124,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c029c1c0affdcbf4583628a436340a76
-      internalID: 288035916
+      spriteID: 4ab73aa151934a24e8b7d73f529909d1
+      internalID: -790923326
       vertices: []
       indices: 
       edges: []
@@ -134,19 +134,19 @@ TextureImporter:
       name: Prince_Hurt_1
       rect:
         serializedVersion: 2
-        x: 77
-        y: 170
-        width: 40
-        height: 20
-      alignment: 9
-      pivot: {x: 0.5169853, y: 0.48112828}
+        x: 64
+        y: 47
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6f6e03038753519468007bc76195ad60
-      internalID: 1866637374
+      spriteID: d71b72eb5cea520479a393ba13d08a16
+      internalID: -434544882
       vertices: []
       indices: 
       edges: []
@@ -155,10 +155,10 @@ TextureImporter:
       name: Prince_Hurt_2
       rect:
         serializedVersion: 2
-        x: 141
-        y: 170
-        width: 40
-        height: 20
+        x: 128
+        y: 47
+        width: 12
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,8 +166,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f5974f65c35e16747b9a26ed05216431
-      internalID: 1686983636
+      spriteID: 63a614b3adf79e6408677fe4aec576e4
+      internalID: 473909358
       vertices: []
       indices: 
       edges: []
@@ -176,10 +176,10 @@ TextureImporter:
       name: Prince_Hurt_3
       rect:
         serializedVersion: 2
-        x: 15
-        y: 107
-        width: 40
-        height: 20
+        x: 192
+        y: 47
+        width: 12
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -187,8 +187,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 170b756e5eb1095449af3ef41e2dacb2
-      internalID: -1721963107
+      spriteID: a6addb9352917574ab5c666a6dddeb3a
+      internalID: -1908006789
       vertices: []
       indices: 
       edges: []
@@ -197,10 +197,10 @@ TextureImporter:
       name: Prince_Hurt_4
       rect:
         serializedVersion: 2
-        x: 77
-        y: 107
-        width: 40
-        height: 20
+        x: 256
+        y: 47
+        width: 12
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -208,8 +208,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 03eb8bd2edff8f44b9dc963b451eed19
-      internalID: -1368911555
+      spriteID: 1c43fa4dfa61ab84da41513fa8931a0a
+      internalID: -20225567
       vertices: []
       indices: 
       edges: []
@@ -218,10 +218,10 @@ TextureImporter:
       name: Prince_Hurt_5
       rect:
         serializedVersion: 2
-        x: 141
-        y: 107
-        width: 40
-        height: 20
+        x: 320
+        y: 46
+        width: 14
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -229,71 +229,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3a32514681e27a946aaeda50edcc98f8
-      internalID: -1707454033
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Prince_Hurt_6
-      rect:
-        serializedVersion: 2
-        x: 15
-        y: 42
-        width: 40
-        height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6ebbca86866add84d98484a0eb269b88
-      internalID: -738013879
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Prince_Hurt_7
-      rect:
-        serializedVersion: 2
-        x: 77
-        y: 42
-        width: 40
-        height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6a1b291cb949bd94dbda4f10bbb75246
-      internalID: -756031897
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Prince_Hurt_8
-      rect:
-        serializedVersion: 2
-        x: 141
-        y: 42
-        width: 40
-        height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5def772cfb5bfc6498ed1b36462b0e81
-      internalID: 53068023
+      spriteID: dcb21eebd1282f945902c51b71bba0fd
+      internalID: -950575446
       vertices: []
       indices: 
       edges: []
@@ -309,15 +246,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Prince_Hurt_0: 288035916
-      Prince_Hurt_1: 1866637374
-      Prince_Hurt_2: 1686983636
-      Prince_Hurt_3: -1721963107
-      Prince_Hurt_4: -1368911555
-      Prince_Hurt_5: -1707454033
-      Prince_Hurt_6: -738013879
-      Prince_Hurt_7: -756031897
-      Prince_Hurt_8: 53068023
+      Prince_Hurt_0: -790923326
+      Prince_Hurt_1: -434544882
+      Prince_Hurt_2: 473909358
+      Prince_Hurt_3: -1908006789
+      Prince_Hurt_4: -20225567
+      Prince_Hurt_5: -950575446
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
