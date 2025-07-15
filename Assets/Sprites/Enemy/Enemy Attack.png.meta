@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d604bb031e7be484a8aa42a991a50e52
+guid: 30a7457c891784ae19a67ef945027849
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -110,106 +110,127 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Prince_Attack_0
+      name: Enemy Attack_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 44
-        width: 25
-        height: 20
+        x: 7
+        y: 114
+        width: 26
+        height: 18
       alignment: 9
-      pivot: {x: 0.3, y: 0.45}
+      pivot: {x: 0.66, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2d24f03f6b2bfb44693674a1607ef62e
-      internalID: 1000819124
+      spriteID: 7ca5e51a6e4ee514ab0bb6e4a08cc922
+      internalID: -47079283
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Prince_Attack_1
+      name: Enemy Attack_1
       rect:
         serializedVersion: 2
-        x: 64
-        y: 44
-        width: 25
-        height: 20
+        x: 53
+        y: 114
+        width: 28
+        height: 18
       alignment: 9
-      pivot: {x: 0.3, y: 0.45}
+      pivot: {x: 0.7, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6020f55bf2f9949409bd01329da69d18
-      internalID: 1663551360
+      spriteID: 11b7c1a356742644ea06faefb059a279
+      internalID: -1899145227
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Prince_Attack_2
+      name: Enemy Attack_2
       rect:
         serializedVersion: 2
-        x: 128
-        y: 44
-        width: 25
-        height: 20
+        x: 6
+        y: 66
+        width: 30
+        height: 18
       alignment: 9
-      pivot: {x: 0.3, y: 0.45}
+      pivot: {x: 0.61, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 435c2baac40092e4d9cf5397f4f4b7d2
-      internalID: -2055744354
+      spriteID: b40afb6dd5e76c64da67cf0ea3825a8d
+      internalID: 163566881
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Prince_Attack_3
+      name: Enemy Attack_3
       rect:
         serializedVersion: 2
-        x: 192
-        y: 44
-        width: 25
-        height: 20
+        x: 54
+        y: 66
+        width: 30
+        height: 18
       alignment: 9
-      pivot: {x: 0.3, y: 0.45}
+      pivot: {x: 0.62, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e232ead097ab8774eaf4156d03e0d970
-      internalID: -1610403751
+      spriteID: 27f357432b584e34db2dd3ceb53399dd
+      internalID: -1840037190
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Prince_Attack_4
+      name: Enemy Attack_4
       rect:
         serializedVersion: 2
-        x: 256
-        y: 44
-        width: 25
-        height: 20
+        x: 6
+        y: 15
+        width: 32
+        height: 21
       alignment: 9
-      pivot: {x: 0.3, y: 0.45}
+      pivot: {x: 0.57, y: 0.55}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3d6a96c41b8645949a00649dd6797362
-      internalID: 681316566
+      spriteID: 310da617fca1cde41aba96acb914bd2c
+      internalID: 1803102398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Attack_5
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 16
+        width: 29
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 363a8f5416cb6de46ba201408a90dcb5
+      internalID: -937124208
       vertices: []
       indices: 
       edges: []
@@ -225,11 +246,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Prince_Attack_0: 1000819124
-      Prince_Attack_1: 1663551360
-      Prince_Attack_2: -2055744354
-      Prince_Attack_3: -1610403751
-      Prince_Attack_4: 681316566
+      Enemy Attack_0: -47079283
+      Enemy Attack_1: -1899145227
+      Enemy Attack_2: 163566881
+      Enemy Attack_3: -1840037190
+      Enemy Attack_4: 1803102398
+      Enemy Attack_5: -937124208
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

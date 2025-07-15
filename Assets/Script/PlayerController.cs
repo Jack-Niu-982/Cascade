@@ -9,7 +9,7 @@ public class PlayerController : MonoBehaviour
     static public float PlayerHP = 10;
     static public float PlayerMP = 10;
     static public bool PerfectDefendCheck = false;
-    static public float PDefendTime = 0.4f;
+    static public float PDefendTime = 0.35f;
 
     public PlayerAnimation Playeranimation;
     public Rigidbody2D rb;
@@ -21,7 +21,7 @@ public class PlayerController : MonoBehaviour
     public Animator animator;
 
     float groundCheckRadius = .2f;
-    public int maxJumps = 2;
+    public int maxJumps = 1;
     public int jumpsRemaining = 0;
     public float horizontalInput;
     public float nextVelocityX;
