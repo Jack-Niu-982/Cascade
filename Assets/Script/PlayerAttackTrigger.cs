@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerAttackTrigger : MonoBehaviour
 {
+    public float HurtForce = 0.2f;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,7 +21,8 @@ public class PlayerAttackTrigger : MonoBehaviour
         if (collision.CompareTag("Enemy"))
         {
             EnemyController f = collision.GetComponent<EnemyController>();
-            f.Hurt(3);
+            f.Hurt(3, HurtForce);
+            CameraShake.Instance.Shake(0.5f);
         }
     }
 }

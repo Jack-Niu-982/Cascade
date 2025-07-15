@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class EnemyAttackTrigger : MonoBehaviour
 {
+    public float HurtForce = 0.2f;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,7 +22,7 @@ public class EnemyAttackTrigger : MonoBehaviour
         {
             Debug.Log("HurtPlayer");
             PlayerController f = collision.GetComponent<PlayerController>();
-            f.Hurt(3, gameObject.transform.parent.gameObject);
+            f.Hurt(3, HurtForce, gameObject.transform.parent.gameObject);
         }
     }
 }
