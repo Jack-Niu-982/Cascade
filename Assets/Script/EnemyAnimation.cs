@@ -51,4 +51,13 @@ public class EnemyAnimation : MonoBehaviour
         animator.SetBool("IfHurt", true);
         HurtActionTime = Time.time;
     }
+    public void SetDeathAnimation()
+    {
+        animator.SetBool("IfDead", true);
+        controller.enabled = false;
+    }
+    public void SelfDestroy()
+    {
+        Destroy(gameObject);
+    }
 }

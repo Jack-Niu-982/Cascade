@@ -32,6 +32,10 @@ public class EnemyController : MonoBehaviour
 
     void Update()
     {
+        if (HP <= 0)
+        {
+            enemyAnimation.SetDeathAnimation();
+        }
         if (animator.GetBool("IfHurt"))
         {
             return;
@@ -117,9 +121,10 @@ public class EnemyController : MonoBehaviour
         return Physics2D.OverlapCircle(groundCheckPoint.position, groundCheckRadius, floorLayer);
     }
 
-    public void Hurt(float damage)
+    public void Hurt(float damage, float hurtTime)
     {
         float totD = damage;
+        HurtTime = hurtTime;
         if (animator.GetBool("IfDefending"))
         {
             totD *= 0.2f;

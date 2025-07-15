@@ -6,8 +6,8 @@ public class PlayerController : MonoBehaviour
 {
     static public float AttackInterval = 0.4f;
     static public float Damage;
-    static public float PlayerHP = 100;
-    static public float PlayerMP;
+    static public float PlayerHP = 10;
+    static public float PlayerMP = 10;
     static public bool PerfectDefendCheck = false;
     static public float PDefendTime = 0.4f;
 
@@ -38,6 +38,10 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(PlayerHP <= 0)
+        {
+            Playeranimation.SetDeathAnimation();
+        }
         if (animator.GetBool("IfHurt"))
         {
             Debug.Log("GetHurting");
@@ -94,20 +98,23 @@ public class PlayerController : MonoBehaviour
         return Physics2D.OverlapCircle(groundCheckPoint.position, groundCheckRadius, floorLayer);
     }
     
-    public void Hurt(float Damage, GameObject Attacker)
+    public void Hurt(float Damage, float hurtTime, GameObject Attacker)
     {
         float totD = Damage;
+        HurtTime = hurtTime;
         
         if (PerfectDefendCheck)
         {
             totD = 0;
             EnemyController AttackerController = Attacker.GetComponent<EnemyController>();
             AttackerController.animator.SetBool("IfAttacking", false);
-            AttackerController.Hurt(3);
+            AttackerController.Hurt(3, 0.5f);
+            CameraShake.Instance.Shake(2);
         }
         else if (animator.GetBool("IfDefending"))
         {
             totD *= 0.2f;
+            CameraShake.Instance.Shake(0.2f);
         }
         else
         {
