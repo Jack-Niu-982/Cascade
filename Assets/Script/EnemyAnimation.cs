@@ -2,50 +2,46 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerAnimation : MonoBehaviour
+public class EnemyAnimation : MonoBehaviour
 {
     public Animator animator;
-    public PlayerController controller;
+    public EnemyController controller;
     public float AttackActionTime;
-    public float PerfectDefendActionTime;
     public float HurtActionTime;
-    // Start is called before the first frame update
+
     void Start()
     {
         animator = GetComponent<Animator>();
-        controller = GetComponent<PlayerController>();
+        controller = GetComponent<EnemyController>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         animator.SetFloat("XSpeed", Mathf.Abs(controller.nextVelocityX));
         animator.SetFloat("YSpeed", controller.nextVelocityY);
         animator.SetBool("Grounded", controller.CheckGrounded());
-        if(Time.time - AttackActionTime >= PlayerController.AttackInterval)
+
+        if (Time.time - AttackActionTime >= controller.AttackInterval)
         {
             animator.SetBool("IfAttacking", false);
         }
-        if(Time.time - PerfectDefendActionTime >= PlayerController.PDefendTime)
-        {
-            PlayerController.PerfectDefendCheck = false;
-        }
-        if(Time.time - HurtActionTime >= controller.HurtTime)
+        if (Time.time - HurtActionTime >= controller.HurtTime)
         {
             animator.SetBool("IfHurt", false);
         }
     }
+
     public void SetAttackAnimation()
     {
         animator.SetBool("IfAttacking", true);
         AttackActionTime = Time.time;
     }
+
     public void SetDefendAnimation()
     {
         animator.SetBool("IfDefending", true);
-        PerfectDefendActionTime = Time.time;
-        PlayerController.PerfectDefendCheck = true;
     }
+
     public void ResetDefendAnimation()
     {
         animator.SetBool("IfDefending", false);
