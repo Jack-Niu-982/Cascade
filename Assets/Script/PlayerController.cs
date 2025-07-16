@@ -19,6 +19,7 @@ public class PlayerController : MonoBehaviour
     public float JumpHeight = 10f;
     public GameObject AttackCollider;
     public Animator animator;
+    public GameObject FireSkill;
 
     float groundCheckRadius = .2f;
     public int maxJumps = 1;
@@ -82,6 +83,12 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKeyUp(KeyCode.Semicolon))
         {
             Playeranimation.ResetDefendAnimation();
+        }
+        if (Input.GetKeyDown(KeyCode.I))
+        {
+            float facingDirection = transform.localScale.x < 0 ? 1f : -1f;
+            var bfb = Instantiate(FireSkill, gameObject.transform.localPosition, gameObject.transform.localRotation);
+            bfb.GetComponent<FireSkill>().SetDirection(-facingDirection);
         }
         if (animator.GetBool("IfAttacking") || animator.GetBool("IfDefending") && nextVelocityY >= 0)
         {

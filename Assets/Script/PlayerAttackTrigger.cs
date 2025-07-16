@@ -24,5 +24,11 @@ public class PlayerAttackTrigger : MonoBehaviour
             f.Hurt(3, HurtForce);
             CameraShake.Instance.Shake(0.5f);
         }
+        else if (collision.CompareTag("Boss"))
+        {
+            BossController f = collision.GetComponent<BossController>();
+            f.Hurt(3, HurtForce);
+            CameraShake.Instance.Shake(0.5f);
+        }
     }
 }

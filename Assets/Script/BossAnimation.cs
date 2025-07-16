@@ -58,8 +58,14 @@ public class BossAnimation : MonoBehaviour
     }
     public void SetHurtAnimation()
     {
-        animator.SetBool("IfHurt", true);
-        HurtActionTime = Time.time;
+        Debug.Log("BossGetHurt");
+        if(!animator.GetBool("IfHurt"))animator.SetBool("IfHurt", true);
+        else
+        {
+            animator.SetBool("IfHurt", false);
+            animator.SetBool("IfHurt", true);
+        }
+            HurtActionTime = Time.time;
     }
     public void SetDeathAnimation()
     {

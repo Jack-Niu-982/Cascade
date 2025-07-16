@@ -12,7 +12,7 @@ public class BossController : MonoBehaviour
     public GameObject attackCollider2;
     public Animator animator;
     public GameObject player;
-    public float HP = 10;
+    public float HP = 100;
     public float Attack1Interval = 2f;
     public float Attack2Interval = 1f;
 
@@ -38,6 +38,10 @@ public class BossController : MonoBehaviour
         if (HP <= 0)
         {
             enemyAnimation.SetDeathAnimation();
+            rb.velocity = Vector3.zero;
+            attackCollider1.SetActive(false);
+            attackCollider2.SetActive(false);
+            return;
         }
         if (animator.GetBool("IfHurt"))
         {
@@ -54,7 +58,7 @@ public class BossController : MonoBehaviour
         float distanceX = player.transform.position.x - transform.position.x;
         float directionToPlayer = Mathf.Sign(distanceX);
 
-        transform.localScale = new Vector3(directionToPlayer, 1, 1);
+        transform.localScale = new Vector3(-directionToPlayer, 1, 1);
 
         if ((animator.GetBool("IfAttacking") || animator.GetBool("IfDefending")) && nextVelocityY >= 0)
         {
@@ -78,7 +82,7 @@ public class BossController : MonoBehaviour
 
         float distanceX = player.transform.position.x - transform.position.x;
         float absDistanceX = Mathf.Abs(distanceX);
-        float directionToPlayer = -Mathf.Sign(distanceX);
+        float directionToPlayer = Mathf.Sign(distanceX);
         float rand = Random.value;
 
         if (absDistanceX <= 4f)
@@ -138,7 +142,7 @@ public class BossController : MonoBehaviour
         float totD = damage;
         if(hurtTime <= 0.2f)
         {
-            HurtTime = 0.1f;
+            HurtTime = 0.2f;
         }
         else
         {
@@ -148,6 +152,9 @@ public class BossController : MonoBehaviour
         if (animator.GetBool("IfDefending"))
         {
             totD *= 0.2f;
+        }else if (animator.GetBool("IfAttacking"))
+        {
+            totD = damage;
         }
         else
         {
