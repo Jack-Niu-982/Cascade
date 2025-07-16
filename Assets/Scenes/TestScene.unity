@@ -170,12 +170,12 @@ GameObject:
   - component: {fileID: 32495324}
   - component: {fileID: 32495323}
   m_Layer: 6
-  m_Name: Enemy (1)
+  m_Name: EnemyD
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!95 &32495323
 Animator:
   serializedVersion: 5
@@ -186,7 +186,7 @@ Animator:
   m_GameObject: {fileID: 32495322}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 0f06b573669e3f44c8ab88c4dfadd27c, type: 2}
+  m_Controller: {fileID: 9100000, guid: f335fdb307688934f9478ff3d02c6334, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -347,7 +347,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -1570152478, guid: 5e7b0d1c5fe0e458dbd36bea1b4e0b2f, type: 3}
+  m_Sprite: {fileID: -30780621, guid: e2bd76d7ab35d44dab2e9d7d85407102, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -623,7 +623,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!95 &180770465
 Animator:
   serializedVersion: 5
@@ -704,8 +704,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.06}
-  m_Size: {x: 1, y: 1.75}
+  m_Offset: {x: 0.6, y: -0.5}
+  m_Size: {x: 2.5, y: 6}
   m_Direction: 0
 --- !u!212 &180770470
 SpriteRenderer:
@@ -748,7 +748,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -1570152478, guid: 5e7b0d1c5fe0e458dbd36bea1b4e0b2f, type: 3}
+  m_Sprite: {fileID: 276551352, guid: 90ee9522938a5d44581d6da035c95daa, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -768,8 +768,8 @@ Transform:
   m_GameObject: {fileID: 180770464}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.63970375, y: 2.02, z: 0}
-  m_LocalScale: {x: 3, y: 3, z: 3}
+  m_LocalPosition: {x: 0.53, y: 2.71, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1464817268}
@@ -795,8 +795,8 @@ MonoBehaviour:
   floorLayer:
     serializedVersion: 2
     m_Bits: 8
-  attackCollider1: {fileID: 0}
-  attackCollider2: {fileID: 0}
+  attackCollider1: {fileID: 133836761}
+  attackCollider2: {fileID: 751858826}
   animator: {fileID: 0}
   player: {fileID: 1534690314}
   HP: 10
@@ -841,7 +841,7 @@ GameObject:
   - component: {fileID: 272796745}
   - component: {fileID: 272796744}
   m_Layer: 6
-  m_Name: Enemy (3)
+  m_Name: EnemyB
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -857,7 +857,7 @@ Animator:
   m_GameObject: {fileID: 272796743}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: f36b0aa7894254a41b7c33f03c775f27, type: 2}
+  m_Controller: {fileID: 9100000, guid: ef78f835bd6c3034cbe660b9bcf10488, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1018,7 +1018,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -1570152478, guid: 5e7b0d1c5fe0e458dbd36bea1b4e0b2f, type: 3}
+  m_Sprite: {fileID: 249287666, guid: 20cf8451cd6084ee2a7878f3f655697c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1994,7 +1994,7 @@ GameObject:
   - component: {fileID: 885827906}
   - component: {fileID: 885827905}
   m_Layer: 6
-  m_Name: Enemy (2)
+  m_Name: EnemyC
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2010,7 +2010,7 @@ Animator:
   m_GameObject: {fileID: 885827904}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: f36b0aa7894254a41b7c33f03c775f27, type: 2}
+  m_Controller: {fileID: 9100000, guid: 0f06b573669e3f44c8ab88c4dfadd27c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -2171,7 +2171,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -1570152478, guid: 5e7b0d1c5fe0e458dbd36bea1b4e0b2f, type: 3}
+  m_Sprite: {fileID: 1833830170, guid: d7c834ef328044420add5dc06d8e0d91, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2347,7 +2347,7 @@ GameObject:
   - component: {fileID: 1168781482}
   - component: {fileID: 1168781481}
   m_Layer: 6
-  m_Name: Enemy
+  m_Name: EnemyA
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

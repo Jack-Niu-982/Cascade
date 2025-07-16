@@ -21,9 +21,19 @@ public class BossAnimation : MonoBehaviour
         animator.SetFloat("YSpeed", controller.nextVelocityY);
         animator.SetBool("Grounded", controller.CheckGrounded());
 
-        if (Time.time - AttackActionTime >= controller.AttackInterval)
+        if (animator.GetBool("DecideAttack"))
         {
-            animator.SetBool("IfAttacking", false);
+            if (Time.time - AttackActionTime >= controller.Attack1Interval)
+            {
+                animator.SetBool("IfAttacking", false);
+            }
+        }
+        else
+        {
+            if (Time.time - AttackActionTime >= controller.Attack2Interval)
+            {
+                animator.SetBool("IfAttacking", false);
+            }
         }
         if (Time.time - HurtActionTime >= controller.HurtTime)
         {
