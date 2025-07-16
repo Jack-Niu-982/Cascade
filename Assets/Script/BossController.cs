@@ -13,7 +13,8 @@ public class BossController : MonoBehaviour
     public Animator animator;
     public GameObject player;
     public float HP = 10;
-    public float AttackInterval = 1f;
+    public float Attack1Interval = 2f;
+    public float Attack2Interval = 1f;
 
     public float moveSpeed = 10f;
     public float groundCheckRadius = 0.2f;
@@ -77,7 +78,7 @@ public class BossController : MonoBehaviour
 
         float distanceX = player.transform.position.x - transform.position.x;
         float absDistanceX = Mathf.Abs(distanceX);
-        float directionToPlayer = Mathf.Sign(distanceX);
+        float directionToPlayer = -Mathf.Sign(distanceX);
         float rand = Random.value;
 
         if (absDistanceX <= 4f)
@@ -135,7 +136,15 @@ public class BossController : MonoBehaviour
     public void Hurt(float damage, float hurtTime)
     {
         float totD = damage;
-        HurtTime = hurtTime;
+        if(hurtTime <= 0.2f)
+        {
+            HurtTime = 0.1f;
+        }
+        else
+        {
+            HurtTime = hurtTime * 2;
+        }
+
         if (animator.GetBool("IfDefending"))
         {
             totD *= 0.2f;
