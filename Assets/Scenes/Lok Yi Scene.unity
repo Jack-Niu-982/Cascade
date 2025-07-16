@@ -1620,6 +1620,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58e9c452a546fe042af40e21243c0a52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  HurtForce: 0.2
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -2624,6 +2625,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ae0616effddd25489192ab620ed9444, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  HurtForce: 0.2
 --- !u!1 &1735979951
 GameObject:
   m_ObjectHideFlags: 0
