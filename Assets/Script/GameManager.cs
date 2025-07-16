@@ -12,6 +12,10 @@ public class GameManager : MonoBehaviour
     public string battleScene = "BattleScene";
     public string CurrentScene = "MainMenu";
     public static bool IfDie = false;
+    public static string[] LevelATexts = { "asd", "ypj" };
+    public static string[] LevelBTexts = { "asd", "ypj" };
+    public static string[] LevelCTexts = { "asd", "ypj" };
+    public static string[] LevelDTexts = { "asd", "ypj" };
 
     public GameObject PausePanel;
     public GameObject DiePanel;
