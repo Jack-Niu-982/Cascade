@@ -18,6 +18,7 @@ public class EnemyController : MonoBehaviour
     public float horizontalInput;
     public float nextVelocityX;
     public float nextVelocityY;
+    public float KnockTime;
 
     public float actionCooldown = 2f;
     public float lastActionTime = 0f;
@@ -35,6 +36,11 @@ public class EnemyController : MonoBehaviour
         if (HP <= 0)
         {
             enemyAnimation.SetDeathAnimation();
+        }
+        if (KnockTime > 0)
+        {
+            KnockTime -= Time.deltaTime;
+            Hurt(0, 0.2f);
         }
         if (animator.GetBool("IfHurt"))
         {

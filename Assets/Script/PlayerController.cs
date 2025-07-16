@@ -6,10 +6,12 @@ public class PlayerController : MonoBehaviour
 {
     static public float AttackInterval = 0.4f;
     static public float Damage;
-    static public float PlayerHP = 10;
-    static public float PlayerMP = 10;
+    static public float PlayerHP = 50;
+    static public float PlayerMP = 100;
     static public bool PerfectDefendCheck = false;
     static public float PDefendTime = 0.35f;
+    static public float CD1 = 3f, CD2 = 5f;
+    static public float SkillPass1 = 3, SkillPass2 = 5;
 
     public PlayerAnimation Playeranimation;
     public Rigidbody2D rb;
@@ -20,6 +22,7 @@ public class PlayerController : MonoBehaviour
     public GameObject AttackCollider;
     public Animator animator;
     public GameObject FireSkill;
+    public GameObject WaterSkill;
 
     float groundCheckRadius = .2f;
     public int maxJumps = 1;
@@ -45,7 +48,6 @@ public class PlayerController : MonoBehaviour
         }
         if (animator.GetBool("IfHurt"))
         {
-            Debug.Log("GetHurting");
             rb.velocity = new Vector2(0, rb.velocity.y);
             return;
         }
@@ -84,11 +86,22 @@ public class PlayerController : MonoBehaviour
         {
             Playeranimation.ResetDefendAnimation();
         }
-        if (Input.GetKeyDown(KeyCode.I))
+        if (Input.GetKeyDown(KeyCode.I) && SkillPass1 >= CD1 && PlayerMP >= 10)
         {
+            PlayerMP -= 10;
             float facingDirection = transform.localScale.x < 0 ? 1f : -1f;
             var bfb = Instantiate(FireSkill, gameObject.transform.localPosition, gameObject.transform.localRotation);
             bfb.GetComponent<FireSkill>().SetDirection(-facingDirection);
+            SkillPass1 = 0;
+        }
+        if(Input.GetKeyDown(KeyCode.O) && SkillPass2 >= CD2 && PlayerMP >= 20)
+        {
+            PlayerMP -= 20;
+            float facingDirection = transform.localScale.x < 0 ? 1f : -1f;
+            Vector3 startOffset = new Vector3(2f * facingDirection, 0f, 0f);
+            Vector3 startPoint = transform.position + startOffset;
+            Instantiate(WaterSkill, startPoint, Quaternion.identity);
+            SkillPass2 = 0f;
         }
         if (animator.GetBool("IfAttacking") || animator.GetBool("IfDefending") && nextVelocityY >= 0)
         {
@@ -98,6 +111,11 @@ public class PlayerController : MonoBehaviour
             
         rb.velocity = new Vector2(nextVelocityX, nextVelocityY);
         if(!animator.GetBool("IfAttacking"))AttackCollider.SetActive(animator.GetBool("IfAttacking"));
+
+        if (SkillPass1 < CD1)
+            SkillPass1 += Time.deltaTime;
+        if (SkillPass2 < CD2)
+            SkillPass2 += Time.deltaTime;
     }
 
     public bool CheckGrounded()
@@ -137,7 +155,6 @@ public class PlayerController : MonoBehaviour
             Playeranimation.SetHurtAnimation();
         }
         PlayerHP -= totD;
-        Debug.Log(PlayerHP);
     }
     public void SetAttackCollider()
     {
