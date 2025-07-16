@@ -21,6 +21,7 @@ public class BossController : MonoBehaviour
     public float horizontalInput;
     public float nextVelocityX;
     public float nextVelocityY;
+    public float KnockTime;
 
     public float actionCooldown = 2f;
     public float lastActionTime = 0f;
@@ -42,6 +43,11 @@ public class BossController : MonoBehaviour
             attackCollider1.SetActive(false);
             attackCollider2.SetActive(false);
             return;
+        }
+        if (KnockTime > 0)
+        {
+            KnockTime -= Time.deltaTime;
+            Hurt(0, 0.2f);
         }
         if (animator.GetBool("IfHurt"))
         {

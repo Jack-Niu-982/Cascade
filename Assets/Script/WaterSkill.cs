@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.Diagnostics;
 using UnityEngine;
 
 public class WaterSkill : MonoBehaviour
@@ -28,7 +27,14 @@ public class WaterSkill : MonoBehaviour
     {
         if (collision.gameObject.tag == "Enemy")
         {
-            //collision.gameObject.GetComponent<EnemyController>().KnockBack(KnockBackForce);
+            collision.GetComponent<EnemyController>().KnockTime = 2;
+            collision.GetComponent<EnemyController>().Hurt(4, 0.2f);
+
+        }
+        if (collision.gameObject.tag == "Boss")
+        {
+            collision.GetComponent<BossController>().KnockTime = 2;
+            collision.GetComponent<BossController>().Hurt(4, 0.2f);
         }
     }
 }

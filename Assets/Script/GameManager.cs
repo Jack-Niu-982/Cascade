@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
@@ -14,6 +15,9 @@ public class GameManager : MonoBehaviour
 
     public GameObject PausePanel;
     public GameObject DiePanel;
+    public Slider HPSlider;
+    public Slider MPSlider;
+    public GameObject PlayerUI;
 
     private bool ifPause = false;
     void Start()
@@ -31,7 +35,15 @@ public class GameManager : MonoBehaviour
     }
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Escape))
+        if(CurrentScene == "MainMenu")
+        {
+            PlayerUI.SetActive(false);
+        }
+        else
+        {
+            PlayerUI.SetActive(true);
+        }
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
             PauseGame();
         }
@@ -40,6 +52,8 @@ public class GameManager : MonoBehaviour
             Time.timeScale = 0f;
             DiePanel.SetActive(true);
         }
+        HPSlider.value = PlayerController.PlayerHP / 50;
+        MPSlider.value = PlayerController.PlayerMP / 100;
     }
     public void LoadScene(string name)
     {
@@ -53,8 +67,8 @@ public class GameManager : MonoBehaviour
     public void Retry()
     {
         IfDie = false;
-        PlayerController.PlayerHP = 10;
-        PlayerController.PlayerMP = 10;
+        PlayerController.PlayerHP = 50;
+        PlayerController.PlayerMP = 100;
         Time.timeScale = 1f;
         DiePanel.SetActive(false);
     }

@@ -711,8 +711,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.6, y: -0.5}
-  m_Size: {x: 2.5, y: 6}
+  m_Offset: {x: 0.45, y: -0.5}
+  m_Size: {x: 2.5, y: 5.9}
   m_Direction: 0
 --- !u!212 &180770470
 SpriteRenderer:
@@ -2898,7 +2898,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 5
+  m_SortingOrder: 20
   m_Sprite: {fileID: 1319372987, guid: ee4f17078bf314269acab5f23476d4ca, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2977,6 +2977,7 @@ MonoBehaviour:
   AttackCollider: {fileID: 451709454}
   animator: {fileID: 0}
   FireSkill: {fileID: 4291594618661029324, guid: 9ceeed003ba2e294192ca75f62a5b45e, type: 3}
+  WaterSkill: {fileID: 2539600437754760354, guid: 3248df3c2815a0e498a6563939f9c712, type: 3}
   maxJumps: 2
   jumpsRemaining: 0
   horizontalInput: 0
