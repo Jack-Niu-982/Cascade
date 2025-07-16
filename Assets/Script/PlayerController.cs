@@ -106,9 +106,18 @@ public class PlayerController : MonoBehaviour
         if (PerfectDefendCheck)
         {
             totD = 0;
-            EnemyController AttackerController = Attacker.GetComponent<EnemyController>();
-            AttackerController.animator.SetBool("IfAttacking", false);
-            AttackerController.Hurt(3, 0.5f);
+            if (Attacker.CompareTag("Enemy"))
+            {
+                EnemyController AttackerController = Attacker.GetComponent<EnemyController>();
+                AttackerController.animator.SetBool("IfAttacking", false);
+                AttackerController.Hurt(3, 0.5f);
+            }
+            else
+            {
+                BossController AttackerController = Attacker.GetComponent<BossController>();
+                AttackerController.animator.SetBool("IfAttacking", false);
+                AttackerController.Hurt(3, 1f);
+            }
             CameraShake.Instance.Shake(2);
         }
         else if (animator.GetBool("IfDefending"))
