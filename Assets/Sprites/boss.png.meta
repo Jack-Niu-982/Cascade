@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: eb9f1add84db9d840afd931cf22f6d15
+guid: 6bebee3c6a156488190d4548e8f0f7be
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 9
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -110,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Prince_Hurt_0
+      name: boss_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 47
-        width: 14
-        height: 17
+        y: 360
+        width: 180
+        height: 180
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,20 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4ab73aa151934a24e8b7d73f529909d1
-      internalID: -790923326
+      spriteID: 2344f04d6c7314041bef7b7b75808eb4
+      internalID: -2038834594
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Prince_Hurt_1
+      name: boss_1
       rect:
         serializedVersion: 2
-        x: 64
-        y: 47
-        width: 12
-        height: 17
+        x: 180
+        y: 360
+        width: 180
+        height: 180
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,20 +145,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d71b72eb5cea520479a393ba13d08a16
-      internalID: -434544882
+      spriteID: 75c398b4e9dff45268a8108667b56990
+      internalID: 1405284989
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Prince_Hurt_2
+      name: boss_2
       rect:
         serializedVersion: 2
-        x: 128
-        y: 47
-        width: 12
-        height: 17
+        x: 360
+        y: 360
+        width: 180
+        height: 180
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,20 +166,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 63a614b3adf79e6408677fe4aec576e4
-      internalID: 473909358
+      spriteID: f2c5cea3605914a9a86faaf05c77b463
+      internalID: -2133032726
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Prince_Hurt_3
+      name: boss_3
       rect:
         serializedVersion: 2
-        x: 192
-        y: 47
-        width: 12
-        height: 17
+        x: 0
+        y: 180
+        width: 180
+        height: 180
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -187,20 +187,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a6addb9352917574ab5c666a6dddeb3a
-      internalID: -1908006789
+      spriteID: af2f750f046584443a267d73436f53e5
+      internalID: -812221599
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Prince_Hurt_4
+      name: boss_4
       rect:
         serializedVersion: 2
-        x: 256
-        y: 47
-        width: 12
-        height: 17
+        x: 180
+        y: 180
+        width: 180
+        height: 180
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -208,20 +208,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1c43fa4dfa61ab84da41513fa8931a0a
-      internalID: -20225567
+      spriteID: ba29f60888dfa4ec58ac45681d60a4db
+      internalID: 223022007
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Prince_Hurt_5
+      name: boss_5
       rect:
         serializedVersion: 2
-        x: 320
-        y: 46
-        width: 14
-        height: 17
+        x: 360
+        y: 180
+        width: 180
+        height: 180
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -229,8 +229,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dcb21eebd1282f945902c51b71bba0fd
-      internalID: -950575446
+      spriteID: a4de09f8186c644a3ba8a711dd04f704
+      internalID: 650364057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 180
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 054d86e4aef7845ba9221962026a43c2
+      internalID: 1123083304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_7
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 0
+        width: 180
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eabb12ebf5da74a10b28eccb1a5797d1
+      internalID: 9284896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_8
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 0
+        width: 180
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17b8ba59b596f486d9d1d54253bb4328
+      internalID: 981738146
       vertices: []
       indices: 
       edges: []
@@ -246,12 +309,15 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Prince_Hurt_0: -790923326
-      Prince_Hurt_1: -434544882
-      Prince_Hurt_2: 473909358
-      Prince_Hurt_3: -1908006789
-      Prince_Hurt_4: -20225567
-      Prince_Hurt_5: -950575446
+      boss_0: -2038834594
+      boss_1: 1405284989
+      boss_2: -2133032726
+      boss_3: -812221599
+      boss_4: 223022007
+      boss_5: 650364057
+      boss_6: 1123083304
+      boss_7: 9284896
+      boss_8: 981738146
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
