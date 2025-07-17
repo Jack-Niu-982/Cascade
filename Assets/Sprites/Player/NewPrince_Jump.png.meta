@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: df15891a51c3eec4baad90e10df73980
+guid: 72601c91b2d1250409a4612502471be4
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,106 +110,43 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: NewPrince_Attack_0
+      name: NewPrince_Jump_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 88
-        width: 50
+        y: 94
+        width: 28
         height: 34
-      alignment: 9
-      pivot: {x: 0.3, y: 0.5}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 86439cbad835d514b9cfe0aca2a3d9b4
-      internalID: -1200847496
+      spriteID: 8ef862a52e5b8d8469c5ba2252237c7d
+      internalID: 1388891393
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NewPrince_Attack_1
+      name: NewPrince_Jump_1
       rect:
         serializedVersion: 2
-        x: 128
-        y: 88
-        width: 50
-        height: 38
-      alignment: 9
-      pivot: {x: 0.3, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b32d949ec3249294ba9250caba33910d
-      internalID: 1771804535
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: NewPrince_Attack_2
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 88
-        width: 50
-        height: 38
-      alignment: 9
-      pivot: {x: 0.3, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3ad319d6d30bc2b4f91856d8463c6459
-      internalID: 1861821869
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: NewPrince_Attack_3
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 88
-        width: 50
+        x: 30
+        y: 94
+        width: 26
         height: 34
-      alignment: 9
-      pivot: {x: 0.3, y: 0.5}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: acdea3ddfa07cef42a75c2afb8814d1d
-      internalID: 1071022116
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: NewPrince_Attack_4
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 88
-        width: 50
-        height: 34
-      alignment: 9
-      pivot: {x: 0.3, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9dfe63463a859b1428e93ca775e0a422
-      internalID: -565986261
+      spriteID: 1171b5310670ba847bb4169b70a006f2
+      internalID: -52849583
       vertices: []
       indices: 
       edges: []
@@ -225,11 +162,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      NewPrince_Attack_0: -1200847496
-      NewPrince_Attack_1: 1771804535
-      NewPrince_Attack_2: 1861821869
-      NewPrince_Attack_3: 1071022116
-      NewPrince_Attack_4: -565986261
+      NewPrince_Jump_0: 1388891393
+      NewPrince_Jump_1: -52849583
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
