@@ -12,12 +12,12 @@ public class GameManager : MonoBehaviour
     public string BattleScene = "Actual level4";
     public string CurrentScene = "MainMenu";
     public static bool IfDie = false;
-    public static string[] LevelATexts = { "asd", "ypj" };
-    public static string[] LevelBTexts = { "asd", "ypj" };
-    public static string[] LevelCTexts = { "asd", "ypj" };
-    public static string[] LevelDTexts = { "asd", "ypj" };
-    public static string[] Boss1Texts = { "asd", "ypj" };
-    public static string[] Boss2Texts = { "asd", "ypj" };
+    public static string[] LevelATexts = { "Kill him!", "That’s the bloody Prince!" };
+    public static string[] LevelBTexts = { "You dictator!", "They kept us here!" };
+    public static string[] LevelCTexts = { "Take his crown!", "No mercy!" };
+    public static string[] LevelDTexts = { "You’re no better than any of us!", "You don’t deserve to rule!" };
+    public static string[] Boss1Texts = { "The crown has betrayed the people!","The Tarnens will take back what’s ours!"};
+    public static string[] Boss2Texts = { "You know nothing of our suffering!", "Why do you get to see the sun?" };
 
     public GameObject PausePanel;
     public GameObject DiePanel;
