@@ -30,10 +30,11 @@ public class BossController : MonoBehaviour
 
     public float actionCooldown = 2f;
     public float lastActionTime = 0f;
-    public float HurtTime = 0.2f;
+    public float HurtTime = 0.5f;
 
     void Start()
     {
+        player = GameObject.Find("Player");
         rb = GetComponent<Rigidbody2D>();
         enemyAnimation = GetComponent<BossAnimation>();
         animator = GetComponent<Animator>();

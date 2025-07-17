@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MainMenu : MonoBehaviour
+public class DeathTrigger : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -15,8 +15,11 @@ public class MainMenu : MonoBehaviour
     {
         
     }
-    public void StartBattleButton()
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        GameManager.Instance.LoadScene(GameManager.Instance.BattleScene);
+        if (collision.CompareTag("Player"))
+        {
+            PlayerController.PlayerHP = 0;
+        }
     }
 }
