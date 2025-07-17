@@ -22,7 +22,6 @@ public class TextFollow : MonoBehaviour
     void Update()
     {
         if(Follow == null)Destroy(gameObject);
-        Debug.Log(ActionTime);  
         if(ActionTime >= TalkInterval)
         {
             TalkText.enabled = true;

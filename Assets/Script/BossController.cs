@@ -12,9 +12,12 @@ public class BossController : MonoBehaviour
     public GameObject attackCollider2;
     public Animator animator;
     public GameObject player;
+    public GameObject LevelTrigger;
     public float HP = 100;
     public float Attack1Interval = 2f;
     public float Attack2Interval = 1f;
+    public float Attack1Poss = 0.5f;
+    public float AttackPoss = 0.7f;
 
     public float moveSpeed = 10f;
     public float groundCheckRadius = 0.2f;
@@ -22,6 +25,8 @@ public class BossController : MonoBehaviour
     public float nextVelocityX;
     public float nextVelocityY;
     public float KnockTime;
+    public bool IfForward;
+    public float ForwardDir;
 
     public float actionCooldown = 2f;
     public float lastActionTime = 0f;
@@ -42,6 +47,7 @@ public class BossController : MonoBehaviour
             rb.velocity = Vector3.zero;
             attackCollider1.SetActive(false);
             attackCollider2.SetActive(false);
+            LevelTrigger.SetActive(true);
             return;
         }
         if (KnockTime > 0)
@@ -71,7 +77,10 @@ public class BossController : MonoBehaviour
             nextVelocityX *= 0.5f;
             nextVelocityY = 0;
         }
-
+        if (IfForward)
+        {
+            nextVelocityX += 10 * ForwardDir;
+        }
         rb.velocity = new Vector2(nextVelocityX, nextVelocityY);
         if (!animator.GetBool("IfAttacking")) attackCollider1.SetActive(animator.GetBool("IfAttacking"));
         if (!animator.GetBool("IfAttacking")) attackCollider2.SetActive(animator.GetBool("IfAttacking"));
@@ -93,13 +102,13 @@ public class BossController : MonoBehaviour
 
         if (absDistanceX <= 4f)
         {
-            if (rand <= 0.7f)
+            if (rand <= AttackPoss)
             {
                 if (animator.GetBool("IfDefending"))
                 {
                     enemyAnimation.ResetDefendAnimation();
                 }
-                if (rand <= 0.5f)
+                if (rand <= Attack1Poss)
                 {
                     animator.SetBool("DecideAttack", true);
                 }
@@ -175,5 +184,13 @@ public class BossController : MonoBehaviour
     public void SetAttackCollider2()
     {
         attackCollider2.SetActive(true);
+    }
+    public void GetForward()
+    {
+        float distanceX = player.transform.position.x - transform.position.x;
+        float directionToPlayer = Mathf.Sign(distanceX);
+        ForwardDir = directionToPlayer;
+        IfForward = !IfForward;
+        Debug.Log("ForwardGet");
     }
 }
