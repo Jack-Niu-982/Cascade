@@ -16,6 +16,8 @@ public class GameManager : MonoBehaviour
     public static string[] LevelBTexts = { "asd", "ypj" };
     public static string[] LevelCTexts = { "asd", "ypj" };
     public static string[] LevelDTexts = { "asd", "ypj" };
+    public static string[] Boss1Texts = { "asd", "ypj" };
+    public static string[] Boss2Texts = { "asd", "ypj" };
 
     public GameObject PausePanel;
     public GameObject DiePanel;

@@ -10,6 +10,7 @@ public class TextFollow : MonoBehaviour
     public float ActionTime = 0f;
     public float TalkInterval = 5f;
     public float TalkSpeed = 3f;
+    public float XOffset = 0, YOffset = 2;
     public int Level = 1;
     // Start is called before the first frame update
     void Start()
@@ -45,6 +46,16 @@ public class TextFollow : MonoBehaviour
                 int rand = Random.Range(0, GameManager.LevelDTexts.Length);
                 TalkText.text = GameManager.LevelDTexts[rand];
             }
+            else if (Level == 5)
+            {
+                int rand = Random.Range(0, GameManager.Boss1Texts.Length);
+                TalkText.text = GameManager.Boss1Texts[rand];
+            }
+            else if (Level == 6)
+            {
+                int rand = Random.Range(0, GameManager.Boss2Texts.Length);
+                TalkText.text = GameManager.Boss2Texts[rand];
+            }
             ActionTime = 0;
         }else if(ActionTime >= TalkSpeed)
         {
@@ -54,6 +65,6 @@ public class TextFollow : MonoBehaviour
         {
             ActionTime += Time.deltaTime;
         }
-        transform.position = new Vector3(Follow.transform.position.x, Follow.transform.position.y + 2, Follow.transform.position.z);
+        transform.position = new Vector3(Follow.transform.position.x + XOffset, Follow.transform.position.y + YOffset, Follow.transform.position.z);
     }
 }
