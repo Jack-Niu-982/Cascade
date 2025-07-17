@@ -2338,6 +2338,7 @@ MonoBehaviour:
   horizontalInput: 0
   nextVelocityX: 0
   nextVelocityY: 0
+  KnockTime: 0
   actionCooldown: 1.5
   lastActionTime: 0
   HurtTime: 0.2
@@ -2728,6 +2729,8 @@ MonoBehaviour:
   JumpHeight: 10
   AttackCollider: {fileID: 451709454}
   animator: {fileID: 0}
+  FireSkill: {fileID: 0}
+  WaterSkill: {fileID: 0}
   maxJumps: 2
   jumpsRemaining: 0
   horizontalInput: 0
