@@ -21,7 +21,7 @@ public class BossAttackTrigger : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             PlayerController f = collision.GetComponent<PlayerController>();
-            f.Hurt(3, HurtForce, gameObject.transform.parent.gameObject);
+            f.Hurt(20, HurtForce, gameObject.transform.parent.gameObject);
         }
     }
 }
