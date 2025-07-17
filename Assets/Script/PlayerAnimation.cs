@@ -27,6 +27,10 @@ public class PlayerAnimation : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(PlayerController.PlayerHP > 0)
+        {
+            controller.enabled = true;
+        }
         animator.SetFloat("XSpeed", Mathf.Abs(controller.nextVelocityX));
         animator.SetFloat("YSpeed", controller.nextVelocityY);
         animator.SetBool("Grounded", controller.CheckGrounded());

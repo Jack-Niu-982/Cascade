@@ -48,6 +48,11 @@ public class PlayerController : MonoBehaviour
             Playeranimation.SetDeathAnimation();
             return;
         }
+        else
+        {
+            animator.SetBool("IfDead", false);
+            Debug.Log("Set!Dead");
+        }
         if (animator.GetBool("IfHurt"))
         {
             rb.velocity = new Vector2(0, rb.velocity.y);
