@@ -32,6 +32,7 @@ public class PlayerKeeper : MonoBehaviour
         PlayerController.PlayerHP = 50;
         PlayerController.PlayerMP = 100;
 
-        // transform.position = new Vector3(0, 0, 0);
+        transform.position = new Vector3(-5.08f, 0, 0);
+        Debug.Log("Reset");
     }
 }
