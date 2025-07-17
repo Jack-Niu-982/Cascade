@@ -22,7 +22,7 @@ public class EnemyController : MonoBehaviour
 
     public float actionCooldown = 2f;
     public float lastActionTime = 0f;
-    public float HurtTime = 0.2f;
+    public float HurtTime = 0.5f;
 
     void Start()
     {
