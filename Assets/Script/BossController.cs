@@ -77,7 +77,7 @@ public class BossController : MonoBehaviour
             nextVelocityX *= 0.5f;
             nextVelocityY = 0;
         }
-        if (IfForward)
+        if (IfForward&& animator.GetBool("IfAttacking"))
         {
             nextVelocityX += 10 * ForwardDir;
         }
@@ -173,17 +173,19 @@ public class BossController : MonoBehaviour
         }
         else
         {
+            if(attackCollider2.activeSelf) attackCollider2.SetActive(!attackCollider2.activeSelf);
+            if(attackCollider1.activeSelf) attackCollider1.SetActive(!attackCollider1.activeSelf);
             enemyAnimation.SetHurtAnimation();
         }
         HP -= totD;
     }
     public void SetAttackCollider1()
     {
-        attackCollider1.SetActive(true);
+        attackCollider1.SetActive(!attackCollider1.activeSelf);
     }
     public void SetAttackCollider2()
     {
-        attackCollider2.SetActive(true);
+        attackCollider2.SetActive(!attackCollider2.activeSelf);
     }
     public void GetForward()
     {

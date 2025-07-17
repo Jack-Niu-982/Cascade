@@ -8,11 +8,16 @@ public class EnemyAnimation : MonoBehaviour
     public EnemyController controller;
     public float AttackActionTime;
     public float HurtActionTime;
+    public AudioSource AudioSource;
+    public AudioClip AttackAudio;
+    public AudioClip DeathAudio;
+    public AudioClip HurtAudio;
 
     void Start()
     {
         animator = GetComponent<Animator>();
         controller = GetComponent<EnemyController>();
+        AudioSource = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -35,6 +40,7 @@ public class EnemyAnimation : MonoBehaviour
     {
         animator.SetBool("IfAttacking", true);
         AttackActionTime = Time.time;
+        AudioSource.PlayOneShot(AttackAudio);
     }
 
     public void SetDefendAnimation()
@@ -50,10 +56,12 @@ public class EnemyAnimation : MonoBehaviour
     {
         animator.SetBool("IfHurt", true);
         HurtActionTime = Time.time;
+        AudioSource.PlayOneShot(HurtAudio);
     }
     public void SetDeathAnimation()
     {
         animator.SetBool("IfDead", true);
+        AudioSource.PlayOneShot(DeathAudio);
         controller.enabled = false;
     }
     public void SelfDestroy()

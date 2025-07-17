@@ -35,6 +35,8 @@ public class EnemyController : MonoBehaviour
     {
         if (HP <= 0)
         {
+            attackCollider.SetActive(false);
+            rb.velocity = Vector3.zero;
             enemyAnimation.SetDeathAnimation();
         }
         if (KnockTime > 0)

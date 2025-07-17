@@ -9,11 +9,19 @@ public class PlayerAnimation : MonoBehaviour
     public float AttackActionTime;
     public float PerfectDefendActionTime;
     public float HurtActionTime;
+    public AudioSource AudioSource;
+    public AudioClip AttackAudio;
+    public AudioClip Attack1Audio;
+    public AudioClip WalkAudio;
+    public AudioClip DeathAudio;
+    public AudioClip HurtAudio;
+    public AudioClip Jump;
     // Start is called before the first frame update
     void Start()
     {
         animator = GetComponent<Animator>();
         controller = GetComponent<PlayerController>();
+        AudioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -39,12 +47,14 @@ public class PlayerAnimation : MonoBehaviour
     {
         animator.SetBool("IfAttacking", true);
         AttackActionTime = Time.time;
-    }
+        AudioSource.PlayOneShot(AttackAudio);
+    } 
     public void SetDefendAnimation()
     {
         animator.SetBool("IfDefending", true);
         PerfectDefendActionTime = Time.time;
         PlayerController.PerfectDefendCheck = true;
+        AudioSource.PlayOneShot(AttackAudio);
     }
     public void ResetDefendAnimation()
     {
@@ -54,14 +64,24 @@ public class PlayerAnimation : MonoBehaviour
     {
         animator.SetBool("IfHurt", true);
         HurtActionTime = Time.time;
+        AudioSource.PlayOneShot(HurtAudio);
     }
     public void SetDeathAnimation()
     {
         animator.SetBool("IfDead", true);
         controller.enabled = false;
+        AudioSource.PlayOneShot(DeathAudio);
     }
     public void SelfDestroy()
     {
         GameManager.IfDie = true;
+    }
+    public void PlayWalkAudio()
+    {
+        AudioSource.PlayOneShot(WalkAudio);
+    }
+    public void PlayJumpAudio()
+    {
+        AudioSource.PlayOneShot(Jump);
     }
 }
