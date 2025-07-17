@@ -3272,6 +3272,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LevelAEnemy
       objectReference: {fileID: 0}
+    - target: {fileID: 5721103927455621777, guid: 18816de520214ee459ef79af18350c68, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7361498491529182847, guid: 18816de520214ee459ef79af18350c68, type: 3}
       propertyPath: player
       value: 
@@ -3337,6 +3341,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LevelCEnemy
       objectReference: {fileID: 0}
+    - target: {fileID: 9085613094037981962, guid: 98282f7656d2eb041be166acdffa484c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3357,6 +3365,10 @@ PrefabInstance:
     - target: {fileID: 7546436844783927228, guid: 61a502b32b1b32d478ce353dc130457a, type: 3}
       propertyPath: m_Name
       value: LevelBEnemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 7546436844783927228, guid: 61a502b32b1b32d478ce353dc130457a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8566051845598275562, guid: 61a502b32b1b32d478ce353dc130457a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3458,6 +3470,10 @@ PrefabInstance:
     - target: {fileID: 7852835355741135031, guid: 3861b7fc4a7753c4cb6336f2ace3b87a, type: 3}
       propertyPath: m_Name
       value: LevelDEnemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 7852835355741135031, guid: 3861b7fc4a7753c4cb6336f2ace3b87a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
