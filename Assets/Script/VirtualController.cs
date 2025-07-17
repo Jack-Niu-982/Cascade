@@ -5,11 +5,12 @@ using UnityEngine;
 
 public class VirtualController : MonoBehaviour
 {
-    public GameObject player = GameObject.Find("Player");
+    public GameObject player;
     public CinemachineVirtualCamera virtualCamera;
     // Start is called before the first frame update
     void Start()
     {
+        player = GameObject.Find("Player");
         virtualCamera = GetComponent<CinemachineVirtualCamera>();
     }
 
