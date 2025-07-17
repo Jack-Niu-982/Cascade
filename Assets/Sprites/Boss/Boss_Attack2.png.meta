@@ -124,8 +124,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 40dd8458d43fe4ae4b496272e66f07b8
-      internalID: -2060175565
+      spriteID: d76a9fdce3f9b4959840fea931fed92b
+      internalID: -814690023
       vertices: []
       indices: 
       edges: []
@@ -145,8 +145,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bff68359afede45d79d4fdba689f32dd
-      internalID: 557049240
+      spriteID: f17fd94813f3f466585d66cda1f80800
+      internalID: -2056194647
       vertices: []
       indices: 
       edges: []
@@ -166,8 +166,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b77f1e08df76c461984a07bef1115e57
-      internalID: -1546129880
+      spriteID: cfbca09c3bee848dbb1c2214f9b36c12
+      internalID: -1503940041
       vertices: []
       indices: 
       edges: []
@@ -187,8 +187,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 38da40b12dcd0413e97695f845280401
-      internalID: 2129207927
+      spriteID: 912f597ed3b1f41cfaffd565e7779a1f
+      internalID: -1537486283
       vertices: []
       indices: 
       edges: []
@@ -208,8 +208,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5b3fa071015244901818b452566280bb
-      internalID: -519663527
+      spriteID: 1ddf34f7598cd40fab2d8402bcc32906
+      internalID: 1662157025
       vertices: []
       indices: 
       edges: []
@@ -229,8 +229,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aeaeb9026ebf9442c8a8d782dcf115f2
-      internalID: -1025039467
+      spriteID: a0cc0d3cd8df5402b9266cd924dff649
+      internalID: 667043002
       vertices: []
       indices: 
       edges: []
@@ -246,12 +246,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Boss_Attack2_0: -2060175565
-      Boss_Attack2_1: 557049240
-      Boss_Attack2_2: -1546129880
-      Boss_Attack2_3: 2129207927
-      Boss_Attack2_4: -519663527
-      Boss_Attack2_5: -1025039467
+      Boss_Attack2_0: -814690023
+      Boss_Attack2_1: -2056194647
+      Boss_Attack2_2: -1503940041
+      Boss_Attack2_3: -1537486283
+      Boss_Attack2_4: 1662157025
+      Boss_Attack2_5: 667043002
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
