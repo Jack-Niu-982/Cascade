@@ -24,7 +24,7 @@ public class PlayerController : MonoBehaviour
     public GameObject FireSkill;
     public GameObject WaterSkill;
 
-    float groundCheckRadius = .2f;
+    float groundCheckRadius = .5f;
     public int maxJumps = 1;
     public int jumpsRemaining = 0;
     public float horizontalInput;
