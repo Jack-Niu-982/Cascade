@@ -44,7 +44,9 @@ public class PlayerController : MonoBehaviour
     {
         if(PlayerHP <= 0)
         {
+            rb.velocity = Vector3.zero;
             Playeranimation.SetDeathAnimation();
+            return;
         }
         if (animator.GetBool("IfHurt"))
         {
