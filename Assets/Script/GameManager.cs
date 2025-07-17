@@ -9,7 +9,7 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
     public string menuScene = "MainMenu";
-    public string battleScene = "BattleScene";
+    public string BattleScene = "Actual level4";
     public string CurrentScene = "MainMenu";
     public static bool IfDie = false;
     public static string[] LevelATexts = { "asd", "ypj" };

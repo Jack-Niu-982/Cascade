@@ -34,6 +34,7 @@ public class BossController : MonoBehaviour
 
     void Start()
     {
+        player = GameObject.Find("Player");
         rb = GetComponent<Rigidbody2D>();
         enemyAnimation = GetComponent<BossAnimation>();
         animator = GetComponent<Animator>();

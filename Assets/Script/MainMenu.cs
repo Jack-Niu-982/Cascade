@@ -17,6 +17,6 @@ public class MainMenu : MonoBehaviour
     }
     public void StartBattleButton()
     {
-        GameManager.Instance.LoadScene(GameManager.Instance.battleScene);
+        GameManager.Instance.LoadScene(GameManager.Instance.BattleScene);
     }
 }
