@@ -80,7 +80,7 @@ public class BossController : MonoBehaviour
         }
         if (IfForward&& animator.GetBool("IfAttacking"))
         {
-            nextVelocityX += 10 * ForwardDir;
+            nextVelocityX += 5 * ForwardDir;
         }
         rb.velocity = new Vector2(nextVelocityX, nextVelocityY);
         if (!animator.GetBool("IfAttacking")) attackCollider1.SetActive(animator.GetBool("IfAttacking"));

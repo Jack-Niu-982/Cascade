@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MainMenu : MonoBehaviour
+public class TextLevel : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -15,12 +15,8 @@ public class MainMenu : MonoBehaviour
     {
         
     }
-    public void StartBattleButton()
+    public void NextLevel()
     {
-        GameManager.Instance.LoadScene("Actual level1");
-    }
-    public void QuitGame()
-    {
-        Application.Quit();
+        GameManager.Instance.LoadScene("Actual level4");
     }
 }

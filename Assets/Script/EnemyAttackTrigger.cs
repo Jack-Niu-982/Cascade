@@ -22,7 +22,7 @@ public class EnemyAttackTrigger : MonoBehaviour
         {
             Debug.Log("HurtPlayer");
             PlayerController f = collision.GetComponent<PlayerController>();
-            f.Hurt(3, HurtForce, gameObject.transform.parent.gameObject);
+            f.Hurt(10, HurtForce, gameObject.transform.parent.gameObject);
         }
     }
 }

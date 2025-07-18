@@ -101,9 +101,9 @@ public class PlayerController : MonoBehaviour
             bfb.GetComponent<FireSkill>().SetDirection(-facingDirection);
             SkillPass1 = 0;
         }
-        if(Input.GetKeyDown(KeyCode.O) && SkillPass2 >= CD2 && PlayerMP >= 20)
+        if(Input.GetKeyDown(KeyCode.O) && SkillPass2 >= CD2 && PlayerMP >= 50)
         {
-            PlayerMP -= 20;
+            PlayerMP -= 50;
             float facingDirection = transform.localScale.x < 0 ? 1f : -1f;
             Vector3 startOffset = new Vector3(2f * facingDirection, 0f, 0f);
             Vector3 startPoint = transform.position + startOffset;

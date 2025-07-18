@@ -2,8 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MainMenu : MonoBehaviour
+public class OptionLevel : MonoBehaviour
 {
+    public GameObject Panel1;
+    public GameObject Panel2;
     // Start is called before the first frame update
     void Start()
     {
@@ -13,11 +15,15 @@ public class MainMenu : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
-    public void StartBattleButton()
+    public void Option1()
     {
-        GameManager.Instance.LoadScene("Actual level1");
+        Panel1.SetActive(true);
+    }
+    public void Option2()
+    {
+        Panel2.SetActive(true);
     }
     public void QuitGame()
     {

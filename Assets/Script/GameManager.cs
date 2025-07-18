@@ -9,7 +9,7 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
     public string menuScene = "MainMenu";
-    public string BattleScene = "Actual level4";
+    public string BattleScene = "Actual level1";
     public string CurrentScene = "MainMenu";
     public static bool IfDie = false;
     public static string[] LevelATexts = { "Kill him!", "That’s the bloody Prince!" };
@@ -41,7 +41,7 @@ public class GameManager : MonoBehaviour
     }
     void Update()
     {
-        if(CurrentScene == "MainMenu")
+        if(CurrentScene == "MainMenu" || CurrentScene == "TextScene" || CurrentScene == "OptionScene")
         {
             PlayerUI.SetActive(false);
         }
@@ -92,5 +92,9 @@ public class GameManager : MonoBehaviour
             PausePanel.SetActive(false);
             ifPause = false;
         }
+    }
+    public void QuitGame()
+    {
+        Application.Quit();
     }
 }

@@ -41,6 +41,9 @@ public class FireSkill : MonoBehaviour
         {
             velo = 0f;
             Instantiate(ExplodePrefab, transform.position, Quaternion.identity);
+            EnemyController f = collision.GetComponent<EnemyController>();
+            f.Hurt(10, 0.7f);
+            CameraShake.Instance.Shake(1f);
             Destroy(gameObject);
         }
         else if(collision.CompareTag("Boss"))

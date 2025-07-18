@@ -719,7 +719,7 @@ MonoBehaviour:
   AudioSource: {fileID: 0}
   AttackAudio: {fileID: 8300000, guid: 0c3c4f818b68c014687ecc5dd87c5566, type: 3}
   Attack1Audio: {fileID: 8300000, guid: 5a4e3d1d8b4a9c44f8105a04179ef154, type: 3}
-  WalkAudio: {fileID: 8300000, guid: edb0909feed336d44aae1a2f53f4ccf0, type: 3}
+  WalkAudio: {fileID: 8300000, guid: ee9b518d8cfd9e7408693f4951c53e8f, type: 3}
   DeathAudio: {fileID: 8300000, guid: 755ce1351b2f1c947b6514901980d04a, type: 3}
   HurtAudio: {fileID: 8300000, guid: 32cf5e162f701d64e927d9732e5dc77d, type: 3}
   WeaponAudio: {fileID: 8300000, guid: 7575f4814720b4b509b55764405171f1, type: 3}
